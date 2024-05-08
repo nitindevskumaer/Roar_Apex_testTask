@@ -3,17 +3,17 @@ import React from "react";
 export default function Hearing() {
   return (
     <div className="container mx-auto h-full max-w-[1024px] ">
-      <div className="flex gap-3 justify-center  xl:mx-auto mx-3 pt-2 md:flex-row flex-col">
+      <div className="flex gap-0 justify-center  xl:mx-auto mx-3 pt-2 md:flex-row flex-col">
         <div className="md:w-8/12 w-full">
           <div className="flex justify-between px-7 py-4 bg-[#F5F5F5] border-b border-[#000]">
-            <text className="text-xs italic text-black">Hearing</text>
+            <span className="text-xs italic text-black">Hearing</span>
             <h3 className="text-sm text-[#C7C4C4] font-bold">X</h3>
           </div>
           <p className="p-4 text-sm text-[#787070] font-bold uppercase border-b border-[#BEB7B7]">
             Results
           </p>
           <div className="flex flex-col ml-2">
-            <div className="flex justify-between gap-10 py-2 border-b border-[#BEB7B7]">
+            <div className="flex justify-between gap-10 py-2 border-b border-[#BEB7B7] pr-4">
               <p className="text-sm font-bold text-[#434141]  w-[15%]">
                 Traditional
               </p>
@@ -31,9 +31,9 @@ export default function Hearing() {
                   </p>
                 </h5>
               </div>
-              <div className="w-7 h-7 px-2 rounded-full bg-gray-400 border-2 border-gray"></div>
+              <div className="w-7 h-7 px-2 rounded-full bg-gray-300 mt-3"></div>
             </div>
-            <div className="flex justify-between gap-10 py-2 border-b border-[#BEB7B7]">
+            <div className="flex justify-between gap-10 py-2 border-b border-[#BEB7B7] pr-4">
               <p className="text-sm font-bold text-[#434141] w-[15%]">Custom</p>
               <div className="w-[50%]">
                 <div className="flex justify-between mb-2">
@@ -48,7 +48,7 @@ export default function Hearing() {
                   </p>
                 </h5>
               </div>
-              <div className="w-7 h-7 px-2 rounded-full bg-gray-400 border-2 border-gray"></div>
+              <div className="w-7 h-7 px-2 rounded-full bg-gray-300 mt-2"></div>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function Hearing() {
           </div>
         </div>
       </div>
-      <div className="lg:mx-auto mx-3">
+      <div className="lg:mx-auto mx-3 mt-4 mb-10">
         
       <button className="bg-[#7BAFE2] w-full p-3 rounded-mu text-xl text-white uppercase mt-3  xl:mx-auto rounded-md">
         Close

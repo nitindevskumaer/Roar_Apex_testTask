@@ -8,10 +8,10 @@ export default function BottomSection() {
   return (
     <div>
       <div className="flex justify-between h-full bg-white py-3 gap-10 md:flex-row flex-col">
-        <div className=" md:w-1/2 w-full h-[500px] text-6xl text-[#9F9999] flex justify-center items-center bg-[#F2F0F0] rounded-md">
+        <div className=" md:w-1/2 w-full min-h-[500px] text-6xl text-[#9F9999] flex justify-center items-center bg-[#F2F0F0] rounded-md">
           PDF
         </div>
-        <div className=" md:w-1/2 w-full flex flex-col h-[500px]">
+        <div className=" md:w-1/2 w-full flex flex-col min-h-[500px]">
           <div className=" px-1 py-5 bg-[#F2F0F0] rounded-md h-full">
             <div className="flex gap-6 pl-2">
               <h3
@@ -57,7 +57,7 @@ export default function BottomSection() {
                       <div className="flex justify-between w-full">
                         <h3 className="text-sm text-gray-400">
                           <strong className="text-black">Chelsea Hagon</strong>{" "}
-                          edited the invoice
+                          sent the invoice
                         </h3>
                         <h4 className="text-sm text-gray-400">6 days ago</h4>
                       </div>
@@ -77,10 +77,10 @@ export default function BottomSection() {
                         <h4 className="text-sm text-gray-400">3 days ago</h4>
                       </div>
 
-                      <text className="text-sm text-gray-500">
+                      <span className="text-sm text-gray-500">
                         called client, they reassured me the invoice would be
                         paid by the 25
-                      </text>
+                      </span>
                     </div>
 
                     <div className="flex gap-2 pt-10 relative">
@@ -100,9 +100,41 @@ export default function BottomSection() {
                       <div className="flex justify-between w-full">
                         <h3 className="text-sm text-gray-400">
                           <strong className="text-black">Chelsea Hagon</strong>{" "}
-                          edited the invoice
+                          sent the invoice
                         </h3>
                         <h4 className="text-sm text-gray-400">6 days ago</h4>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-2 mt-10 relative p-3 flex-col border border-gray-300 rounded-md">
+                      <div className="bg-white w-6 h-6 absolute left-[-50px]"></div>
+                      <img
+                        src="/female.png"
+                        className="w-8 absolute left-[-57px] rounded-full"
+                        alt="Example"
+                      />
+                      <div className="flex justify-between w-full">
+                        <h3 className="text-sm text-gray-400">
+                          <strong className="text-black">Chelsea Hagon</strong>{" "}
+                          Commented
+                        </h3>
+                        <h4 className="text-sm text-gray-400">3 days ago</h4>
+                      </div>
+
+                      <span className="text-sm text-gray-500">
+                        called client, they reassured me the invoice would be
+                        paid by the 25
+                      </span>
+                    </div>
+                    <div className="flex gap-2 pt-10 relative">
+                      <div className="bg-white w-6 h-6 absolute left-[-50px]"></div>
+                      <div className="w-3 h-3 absolute left-[-47px] top-11 rounded-full bg-gray-100 border-2 border-gray-300"></div>
+                      <div className="flex justify-between w-full">
+                        <h3 className="text-sm text-gray-400">
+                          <strong className="text-black">Alex Curren</strong>{" "}
+                          veiw the invoice
+                        </h3>
+                        <h4 className="text-sm text-gray-400">2 days ago</h4>
                       </div>
                     </div>
                   </div>
@@ -219,7 +251,7 @@ export default function BottomSection() {
           </div>
           {!isTimelineSelected && (
             <div className="p-3 bg-[#F2F0F0] mt-auto">
-              <text className="text-xl text-[#565656]">Recommendation</text>
+              <span className="text-xl text-[#565656]">Recommendation</span>
               <div className="mt-4">
                 <select
                   value={selectedOption}
@@ -239,12 +271,13 @@ export default function BottomSection() {
           )}
         </div>
       </div>
-
-      <div className="lg:mx-auto mx-3 text-center">
-        <button className="bg-[#7BAFE2] w-1/2 p-3 rounded-mu text-xl text-white uppercase mt-3  mx-auto rounded-md">
-        SUBMIT
-        </button>
-      </div>
+      {isTimelineSelected && (
+        <div className="lg:mx-auto mx-3 text-center mb-10 mt-4">
+          <button className="bg-[#7BAFE2] w-1/2 p-3 rounded-mu text-xl text-white uppercase mt-3  mx-auto rounded-md">
+            SUBMIT
+          </button>
+        </div>
+      )}
     </div>
   );
 }

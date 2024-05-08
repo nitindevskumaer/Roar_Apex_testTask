@@ -12,11 +12,11 @@ function App() {
     switch (currentScreen) {
       case 'Dashboard':
         return <Dashboard />;
-      case 'Screen2':
+      case 'Applicants':
         return <Applicants />;
-      case 'Screen3':
+      case 'ApplicantInfo':
         return <ApplicantInfo />;
-      case 'Screen4':
+      case 'Hearing':
         return <Hearing />;
       default:
         return <Dashboard />; 
@@ -27,9 +27,9 @@ function App() {
     <>
       <div className='flex gap-7 p-3 bg-[#7BAFE2] text-white'>
         <button onClick={() => setCurrentScreen('Dashboard')}>Dashboard</button>
-        <button onClick={() => setCurrentScreen('Screen2')}>Applicants</button>
-        <button onClick={() => setCurrentScreen('Screen3')}>ApplicantInfo</button>
-        <button onClick={() => setCurrentScreen('Screen4')}>Hearing</button>
+        <button onClick={() => setCurrentScreen('Applicants')}>Applicants</button>
+        <button onClick={() => setCurrentScreen('ApplicantInfo')}>ApplicantInfo</button>
+        <button onClick={() => setCurrentScreen('Hearing')}>Hearing</button>
       </div>
       {renderScreen()}
     </>

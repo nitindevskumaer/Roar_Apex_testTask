@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css"; // Add Quill styles
-import "quill-emoji/dist/quill-emoji.css"; // Add Quill Emoji styles
-
-
+import "react-quill/dist/quill.snow.css"; 
+import "quill-emoji/dist/quill-emoji.css";
 import "quill-emoji/dist/quill-emoji.js";
 import BottomSection from "./BottomSection";
 
@@ -30,7 +28,7 @@ export default function ApplicantInfo() {
 
   return (
     <div className="container mx-auto">
-      <div className="flex justify-between mx-auto p-1">
+      <div className="flex justify-between mx-auto p-1 mt-3 mb-2">
         <div className="flex">
           <h3 className="text-sm font-semibold w-16">Exam</h3>
           <h3 className="text-sm">Exam Name</h3>
@@ -114,12 +112,12 @@ export default function ApplicantInfo() {
         </div>
         <div className="p-3 px-5 bg-white  lg:w-4/12 w-full">
           <p className="text-sm font-bold text-black mb-5">Exam history</p>
-          <div className="flex section-3  gap-10">
-            <div>
+          <div className="flex section-3  gap-5">
+            <div className="w-1/2">
               
             <div className="flex flex-col gap-3">
               <p className="text-sm">Referral Dates</p>
-              <div className="flex justify-between">
+              <div className="flex justify-between pl-3">
 
               <div className="flex flex-col gap-3">
                 <h2 className="text-sm font-semibold w-16">Received</h2>
@@ -135,15 +133,17 @@ export default function ApplicantInfo() {
             </div>
             <div>
               <p className="text-sm font-semibold mt-3">Most Recent</p>
-              <text className="text-sm pl-5">Most Recent</text>
+              <span className="text-sm pl-5">Most Recent</span>
+              <p className="text-sm  mt-3 flex justify-between"><span className="font-bold">Date</span><span>1/1/2024</span></p>
+
             </div>
 
             </div>
-            <div className="border-l boder-[#BFBFBF] pl-7">
+            <div className="border-l boder-[#BFBFBF] pl-4 w-1/2">
               
               <div className="flex flex-col gap-3">
                 <p className="text-sm">Exam Dates</p>
-                <div className="flex justify-between">
+                <div className="flex justify-between pl-3">
   
                 <div className="flex flex-col gap-3">
                   <h2 className="text-sm font-semibold w-16">Exam</h2>

@@ -13,8 +13,14 @@ export default function Applicants() {
               <ul>
                 <li className="text-sm font-bold text-black">
                   Text
-                  <li className="text-sm font-normal text-black ml-5">Text</li>
-                  <li className="text-sm font-normal text-black ml-5">Text</li>
+                  <ul>
+                    <li className="text-sm font-normal text-black ml-5">
+                      Text
+                    </li>
+                    <li className="text-sm font-normal text-black ml-5">
+                      Text
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -47,7 +53,7 @@ export default function Applicants() {
           <p className="text-sm text-black p-2 py-3.5">John Doe</p>
         </div>
         <div className="container mx-auto bg-[#F3F2F2] pb-10 dashboard-container">
-          <table className="w-full">
+          <table className="w-full text-center">
             <thead>
               <tr>
                 <th
@@ -89,25 +95,18 @@ export default function Applicants() {
               <tr>
                 <td
                   colSpan={11}
-                  className="text-sm text-[#232222] p-2 font-bold px-3 border-black border-b-2 bg-[#CCDDEF]"
+                  className="text-sm text-left text-[#232222] p-2 font-bold px-3 border-black border-b-2 bg-[#CCDDEF]"
                 >
                   GROUP NAME
                 </td>
               </tr>
               {generateRows()}
-              <tr>
-                {/* <td className="px-6 py-4 whitespace-no-wrap border-b border-gray-200">Jane Smith</td>
-              <td className="px-6 py-4 whitespace-no-wrap border-b border-gray-200">jane.smith@example.com</td>
-              <td className="px-6 py-4 whitespace-no-wrap border-b border-gray-200">User</td> */}
-              </tr>
-              {/* Add more rows as needed */}
             </tbody>
-            '
             <tfoot>
               <tr>
                 <td
                   colSpan={11}
-                  className="text-sm text-[#232222] p-2 font-bold px-3 border-black border-b-2 bg-[#CCDDEF]"
+                  className="text-sm text-left text-[#232222] p-2 font-bold px-3 border-black border-b-2 bg-[#CCDDEF]"
                 >
                   GROUP NAME
                 </td>
