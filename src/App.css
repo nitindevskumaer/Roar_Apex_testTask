@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.dashboard-container {
+  height: calc(100vh - 50px);
+  @media(max-width: 1024px){
+    width: 100%;
+    table{
+    width: 1024px;
+    overflow: auto;
+  }
+  }
+}
